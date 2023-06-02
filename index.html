@@ -1,100 +1,176 @@
-
 <!DOCTYPE html>
-
 <html>
+<head>
+  <title>Website Sederhana</title>
+  <style>
+    body {
+      background-color: #000;
+      overflow: hidden;
+      position: relative;
+    }
 
-  <head>
+    #particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
 
-    <title>Fowshir Tech</title>
+    #logo {
+      margin-top: 100px;
+      text-align: center;
+    }
 
-    <style>
+    h1 {
+      color: #fff;
+      font-size: 36px;
+    }
 
-      /* Gaya pemrograman */
+    .tagline {
+      color: #fff;
+      font-size: 18px;
+      margin-top: 20px;
+    }
 
-      body {
+    .button-container {
+      text-align: center;
+      margin-top: 50px;
+    }
 
-        font-family: monospace;
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles"></div>
 
-        background-color: #242424;
+  <div id="logo">
+    <img src="logo.png" alt="Logo" width="200px" height="200px">
+    <h1>Website Sederhana</h1>
+    <p class="tagline">Minimalis tapi keren</p>
+  </div>
 
-        color: #fff;
+  <div class="button-container">
+    <a class="button" href="https://www.youtube.com">YouTube</a>
+    <a class="button" href="https://itch.io">itch.io</a>
+  </div>
 
-        padding: 0;
-
-        margin: 0;
-
-      }
-
-      h1 {
-
-        font-size: 36px;
-
-        margin-top: 50px;
-
-        margin-bottom: 30px;
-
-      }
-
-      p {
-
-        font-size: 18px;
-
-        line-height: 1.5;
-
-        margin-bottom: 20px;
-
-      }
-
-      a {
-
-        color: #fff;
-
-        text-decoration: underline;
-
-      }
-
-      /* Warna perusahaan */
-
-      .primary-color {
-
-        color: #F3C700;
-
-      }
-
-      .secondary-color {
-
-        color: #BA190F;
-
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-
-    <header>
-
-      <h1 class="primary-color">Fowshir Horizon</h1>
-
-    </header>
-
-    <main>
-
-      <p> Hello World! Welcome to Fowshir Horizon!. Kami adalah perusahaan yang bergerak di bidang teknologi dan berkomitmen untuk memberikan solusi terbaik bagi pelanggan kami.</p>
-
-      <p>Kami menawarkan berbagai layanan, mulai dari pembuatan website, pengembangan aplikasi mobile, hingga implementasi sistem informasi perusahaan.</p>
-
-      <p>Jika Anda tertarik dengan layanan kami, jangan ragu untuk menghubungi kami melalui <a href="mailto:info@perusahaanxyz.com">email</a> atau <a href="tel:+6281234567890">telepon</a>.</p>
-
-    </main>
-
-    <footer>
-
-      <p class="secondary-color">&copy; 2023 Perusahaan XYZ. All rights reserved.</p>
-
-    </footer>
-
-  </body>
-
+  <script src="particles.js"></script>
+  <script>
+    particlesJS("particles", {
+      particles: {
+        number: {
+          value: 150,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: "#ffffff"
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 0,
+            color: "#000000"
+          },
+          polygon: {
+            nb_sides: 5
+          }
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false
+          }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false
+          }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200
+          }
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse"
+          },
+          onclick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 1
+            }
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3
+          },
+          repulse: {
+            distance: 200
+          },
+          push: {
+            particles_nb: 4
+          },
+          remove: {
+            particles_nb: 2
+          }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
 </html>
