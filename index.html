@@ -1,176 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fowshir</title>
-  <style>
-    body {
-      background-color: #000;
-      overflow: hidden;
-      position: relative;
-    }
-
-    #particles {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
-    #logo {
-      margin-top: 100px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #fff;
-      font-size: 36px;
-    }
-
-    .tagline {
-      color: #fff;
-      font-size: 18px;
-      margin-top: 20px;
-    }
-
-    .button-container {
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px;
-      background-color: #fff;
-      color: #000;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 5px;
-    }
-  </style>
+    <title>Fowshir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin-top: 150px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #333333;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        
+        .button:hover {
+            background-color: #666666;
+        }
+    </style>
 </head>
 <body>
-  <div id="particles"></div>
-
-  <div id="logo">
-    <img src="logo.png" alt="Logo" width="200px" height="200px">
+    <img class="logo" src="path/to/your/logo.png" alt="Logo">
     <h1>Fowshir</h1>
-    <p class="tagline">Welcome to Fowshir Horizon!</p>
-  </div>
-
-  <div class="button-container">
-    <a class="button" href="https://www.youtube.com/fowshir">YouTube</a>
+    <p>Kreator Kartun Family Friendly 🧃</p>
+    <a class="button" href="https://youtube.com/fowshir">YouTube</a>
     <a class="button" href="https://fowshir.itch.io">itch.io</a>
-  </div>
-
-  <script src="particles.js"></script>
-  <script>
-    particlesJS("particles", {
-      particles: {
-        number: {
-          value: 150,
-          density: {
-            enable: true,
-            value_area: 800
-          }
-        },
-        color: {
-          value: "#ffffff"
-        },
-        shape: {
-          type: "circle",
-          stroke: {
-            width: 0,
-            color: "#000000"
-          },
-          polygon: {
-            nb_sides: 5
-          }
-        },
-        opacity: {
-          value: 0.5,
-          random: false,
-          anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false
-          }
-        },
-        size: {
-          value: 3,
-          random: true,
-          anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false
-          }
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#ffffff",
-          opacity: 0.4,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 6,
-          direction: "none",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200
-          }
-        }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse"
-          },
-          onclick: {
-            enable: true,
-            mode: "push"
-          },
-          resize: true
-        },
-        modes: {
-          grab: {
-            distance: 400,
-            line_linked: {
-              opacity: 1
-            }
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3
-          },
-          repulse: {
-            distance: 200
-          },
-          push: {
-            particles_nb: 4
-          },
-          remove: {
-            particles_nb: 2
-          }
-        }
-      },
-      retina_detect: true
-    });
-  </script>
 </body>
 </html>
